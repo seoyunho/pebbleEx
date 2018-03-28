@@ -1,0 +1,7 @@
+.asset1 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+}

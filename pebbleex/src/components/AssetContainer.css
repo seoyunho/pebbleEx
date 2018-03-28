@@ -3,15 +3,11 @@ body {
   padding: 0;
 }
 #asset-container-wrapper{
-  width: 30%;
-  height: 100vh;
+  display: inline-block;
+  min-width: 200px;
+  height: calc(100vh - 100px);
   background-color: gray;
   padding: 50px;
+  float: left;
 }
 
-#asset1 {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-}

@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
-import asset from './asset'
+import context from './context'
 
-export default combineReducers({
-  asset
+const reducer = combineReducers({
+  context
 })
+
+export default reducer

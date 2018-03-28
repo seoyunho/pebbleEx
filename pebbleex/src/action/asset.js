@@ -1,16 +1,27 @@
-const MOVE_ASSET = 'MOVE_ASSET'
-const CREATE_ASSET = 'CREATE_ASSET'
+export const actionTypes = {
+  MOVE_ASSET: 'MOVE_ASSET',
+  CREATE_ASSET: 'CREATE_ASSET',
+  SELECT_ASSET: 'SELECT_ASSET'
+} 
 
-function moveAsset(x, y) {
+export const moveAsset = (x, y) => {
   return {
-    type: MOVE_ASSET,
+    type: actionTypes.MOVE_ASSET,
     x: x,
     y: y
   }
 }
 
-function createAsset() {
+export const createAsset = (assetType)=> {
   return {
-    type: CREATE_ASSET
+    type: actionTypes.CREATE_ASSET,
+    assetType: assetType
   }
+}
+
+export const selectAsset = (id) => {
+  return {
+    type: actionTypes.SELECT_ASSET,
+    id: id
+  } 
 }

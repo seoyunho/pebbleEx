@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-//import MainContainer from './MainContainer'
+import React, { Component } from 'react'
+import MainContainer from './MainContainer'
 import AssetContainer from './AssetContainer'
 
 class App extends Component {
@@ -7,10 +7,10 @@ class App extends Component {
     return (
       <div>
         <AssetContainer/>      
-        {/* <MainContainer/> */}
+        <MainContainer/>
       </div>
-    );
+    )
   } 
 }
 
-export default App;
+export default App

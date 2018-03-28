@@ -1,5 +1,10 @@
-import { createStore, compose } from 'redux'
+import { createStore } from 'redux'
+import reducers from '../reducer'
 
-export default function(reducer) {
-  return createStore(reducer)
+export const store = createStore(
+  reducers
+)
+
+export const dispatch = (action)=>{
+  store.dispatch(action)
 }
